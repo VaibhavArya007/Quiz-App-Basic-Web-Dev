@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <a id="timer-element"></a>
+        <div style="color: rgb(8, 65, 3); font-weight:900;">QUIZ APP</div>
+        <button id="start"><b>START</b></button>
+    </div>
+    <div id="quiz-container">
+        <h1 id="simple-quiz">Simple Quiz</h1>
+        <h1 style="display: none; color: rgb(75, 13, 13);" id="result-display" >Results</h1>
+        <div id="intital-message">
+           <b>Hi There</b> , Welcome to the Simple Quiz. 
+           <br>
+           <br>
+           <b>You have 120 seconds</b> to complete the quiz. <b>Good Luck!</b>
+            <br><br>
+            Press <b style="color: green;">START</b> to begin!  
+        </div>
+        <div id="quiz"></div>
+        <div id="navigation-buttons">
+            <button id="prev" disabled >Previous</button>
+            <button id="submit" disabled >Submit Quiz</button>
+            <button id="next" disabled >Next</button>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to bottom, #fbffe9, #e0f7fa);
+    min-height: 100vh; 
+    overflow-x: hidden; 
+}
+
+#navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#navbar {
+    background: linear-gradient(to right, #c1d6ff, #9bec9f);
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box; 
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-container {
+    background: linear-gradient(to bottom, white, #f1f8e9);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-container:hover {
+    box-shadow: 0 20px 26px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background: linear-gradient(to right, #0056b3, #003d80);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #navbar {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #quiz-container {
+        margin: 20px;
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px;
+        margin: 3px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    #quiz-container {
+        margin: 10px;
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        padding: 5px;
+        margin: 2px;
+        font-size: 0.7em;
+    }
+
+    #navigation-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
