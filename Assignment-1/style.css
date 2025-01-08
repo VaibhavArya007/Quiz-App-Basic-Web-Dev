@@ -14,12 +14,24 @@ body {
     min-height: 100vh; 
     overflow-x: hidden; 
 }
-
 #navigation-buttons {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 5px;
+}
+
+#navigation-buttons #prev {
+    order: 1;
+}
+
+#navigation-buttons #next {
+    order: 2; 
+}
+
+#navigation-buttons #submit {
+    order: 3; 
+    margin-left: auto; 
 }
 
 #navbar {
@@ -81,7 +93,7 @@ button:hover {
     background: linear-gradient(to right, #0056b3, #003d80);
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
     #navbar {
         font-size: 1em;
